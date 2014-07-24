@@ -226,7 +226,7 @@ h1{
 }
 
 
-@media screen and (min-width: 766px) and (max-width: 991px){
+@media screen and (min-width: 767px) and (max-width: 991px){
 .design{
     margin-left: 120px;
 }
@@ -245,7 +245,7 @@ h1{
 
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 766px){
 .skills li{
     text-align: center;
 }
