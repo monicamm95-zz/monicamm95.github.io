@@ -1,26 +1,21 @@
 <?php
-if(isset($_POST['submit'])) {
-
-$to = "monicamm95@gmail.com";
-$subject = "Contact Submission";
- 
-// data the visitor provided
-$name_field = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$email_field = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-$comment = filter_var($_POST['comment'], FILTER_SANITIZE_STRING);
- 
-//constructing the message
-$body = "From: $name_field\n\n E-Mail: $email_field\n\n Message:\n\n $comment";
- 
-// ...and away we go!
-mail($to, $subject, $body);
- 
-// redirect to confirmation
-header('Location: confirmation.html');
-
-} else {
-
-// handle the error somehow
-
-}
-?> 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: TangledDemo'; 
+    $to = 'monicamm95@gmail.com'; 
+    $subject = 'Hello';
+    $human = $_POST['human'];
+			
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+				
+    if ($_POST['submit'] && $human == '4') {				 
+        if (mail ($to, $subject, $body, $from)) { 
+	    echo '<p>Your message has been sent!</p>';
+	} else { 
+	    echo '<p>Something went wrong, go back and try again!</p>'; 
+	} 
+    } else if ($_POST['submit'] && $human != '4') {
+	echo '<p>You answered the anti-spam question incorrectly!</p>';
+    }
+?>
