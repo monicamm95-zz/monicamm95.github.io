@@ -108,7 +108,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus {
     
 }
 
-
+@media screen and (max-width: 448px){
+    #navbar li{
+        width: 50%;
+        float: left;
+    }
+}
 /*---INTRO SECTION--*/
 h1, .intro h2{
     color: #13A3A5;
@@ -215,6 +220,15 @@ h1{
     text-align: left;
 }
 
+.skillList i:first-child{
+    margin-left: 3px;
+}
+
+.skills{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
 @media screen and (min-width: 992px){
 .col-md-3{
     width:20%;
@@ -226,7 +240,7 @@ h1{
 }
 
 
-@media screen and (min-width: 767px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 .design{
     margin-left: 120px;
 }
@@ -245,21 +259,11 @@ h1{
 
 }
 
-@media screen and (max-width: 766px){
+@media screen and (max-width: 767px){
 .skills li{
     text-align: center;
 }
 }
-
-.skillList i:first-child{
-    margin-left: 3px;
-}
-
-.skills{
-    margin-top: 30px;
-    font-size: 16px;
-}
-
 
 /*---PORTFOLIO---*/
 
@@ -390,6 +394,13 @@ img{
     right:0;
     padding:5px 32px 0 0;
     font-size: 35px;
+    color: #e54e45;
+    opacity: 1;
+}
+
+.close:hover{
+    color: #DBC390;
+    opacity: 1;
 }
 
 .dotBorder-modal{

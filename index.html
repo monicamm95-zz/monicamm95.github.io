@@ -480,11 +480,28 @@
 
 <script src="smooth-scroll.js"></script> <!-- https://github.com/cferdinandi/smooth-scroll-->
 <script>
-    smoothScroll.init({
-        speed: 1000,
-        easing: 'easeInOutCubic',
-        offset: 100,
-        updateURL: false
+      $(document).ready(function(){
+        var offsetval;
+        if ($(this).width() > 768 ) {
+            offsetval = 100;
+        }
+
+        else if ($(this).width() > 445 ){
+            offsetval = 130;
+        }
+
+        else {
+            offsetval = 180;
+        }
+
+        console.log("The offsetval is -> " + offsetval);
+
+        smoothScroll.init({
+            speed: 1000,
+            easing: 'easeInOutCubic',
+            offset: offsetval,
+            updateURL: false
+        });
     });
 </script>
 
@@ -520,40 +537,9 @@ $(function(){
         $(theDialog).fadeOut();
     };
 
-    $(document).ready(function($){
-   
-    // var full = $('#fullscreen');
-    // $(full).data('state','open');
-    // $('.box-modal').click(function(){
-    //   if($(full).data('state') == 'open'){
-    //     $(full).fadeIn(300);
-    //     $(full).data('state','close');
-    //     //console.log($(full).data('state') );
-    //     $('html').css('overflow','hidden');
-    //     $('body').css('overflow','hidden');
-    //   }
-    // });
-    // $('.close').click(function(){
-    //   if($(full).data('state') == 'close'){
-    //     $(full).fadeOut();
-    //     $(full).data('state','open');
-    //    //console.log($(full).data('state') );
-    //    $('html').css('overflow','auto');
-    //     $('body').css('overflow','auto');
-    //   }
-    // });  
-
-    
-
-});
 </script>
 
-<!-- <div class="portfolioOne" onclick="dialogOpen(dialogOne);">Portfolio One</div>
-<div class="portfolioTwo" onclick="dialogOpen(dialogTwo);">Portfolio Two</div>
 
-<div id="dialogOne" class="portfolio-dialog">Hello I am dialog One</div>
-
-<div id="dialogTwo" class="portfolio-dialog">Hello I am dialog Two</div> -->
 
 
 </body>
