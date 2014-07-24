@@ -406,7 +406,7 @@
         </div>
         
         <div class="row">
-        <form method="post" name="htmlform" action="contact.php" class="col-md-6 contact">
+       <!--  <form method="post" name="htmlform" action="contact.php" class="col-md-6 contact">
             <div class="row">
             <div class="form-group topRow col-md-6 col-sm-6 col-xs-12">
                 <label for="name">Name</label>
@@ -423,12 +423,24 @@
             <div class="form-group col-md-12">
                 <label for="message">Message</label>
                 <textarea name="message" class="form-control" rows="4" id="message" ></textarea>
-                <input name="submit" type="submit" value="Submit" class="btn" id="contact-submit"><!-- <i class="fa fa-paper-plane"></i>Send It!</input> -->
+                <input name="submit" type="submit" value="Submit" class="btn" id="contact-submit"><i class="fa fa-paper-plane"></i>Send It!</input>
             </div>
 
             </div>
             
-        </form>
+        </form> -->
+
+ 
+    
+<form class="contact" name="htmlform" method="post" action="html_form_send.php">
+<label for="name">Name</label>
+<input type="text" name="name">
+<label for="email">E-mail</label>
+<input type="email" name="email">
+<label for="message">Message</label>
+<textarea name="message" id="" cols="30" rows="10"></textarea>
+<input type="submit" value="Send!" name="submit">
+</form>
 
         <div id="contactCircles" class="col-md-6 col-xs-12">
         <div id="info-phone" class="contactInfo">
