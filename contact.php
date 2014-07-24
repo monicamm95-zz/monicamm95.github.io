@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit'])) {
 
-$to = "erinvleach@gmail.com";
+$to = "monicamm95@gmail.com";
 $subject = "What are you thinking submission!";
  
 // data the visitor provided
