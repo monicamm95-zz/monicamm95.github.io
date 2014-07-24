@@ -432,6 +432,11 @@ img{
   .portfolio li {
     width: 45%;
   }
+
+  .portfoliodialog .container{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
  
 @media screen and (max-width: 550px) {
@@ -444,6 +449,14 @@ img{
     display: inline-block;
     width: 80%;
     margin-bottom: 30px;
+  }
+
+  #autocad img{
+    margin: 0;
+  }
+
+  .close{
+    padding-right: 15px;
   }
 }
 
