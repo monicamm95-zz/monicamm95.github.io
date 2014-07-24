@@ -427,8 +427,12 @@ img{
 
 #autocad img{
     margin:20px;
+    display: inline;
 }
 
+#groupimg{
+    margin: 20px auto;
+}
 #volunteer p{
     margin-top: 30px;
 }
@@ -438,6 +442,7 @@ img{
     .portfolio li{
         margin:10px;
     }
+
 }
 @media screen and (max-width: 780px) {
   .portfolio li {
@@ -455,9 +460,11 @@ img{
 
   #autocad img{
     margin: 0 auto;
+    display: block;
   }
 
-  #autocad #side{
+  #autocad #top{
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
@@ -473,10 +480,6 @@ img{
     width: 80%;
     margin-bottom: 30px;
   }
-
-  
-
-
 }
 
 @media screen and (max-width: 991px){
