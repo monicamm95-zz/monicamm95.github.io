@@ -226,7 +226,7 @@ h1{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 766px) and (max-width: 991px){
 .design{
     margin-left: 120px;
 }
@@ -245,7 +245,7 @@ h1{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 765px){
 .skills li{
     text-align: center;
 }
@@ -437,6 +437,18 @@ img{
     padding-right: 25px;
     padding-left: 25px;
   }
+
+  .close{
+    padding-right: 15px;
+  }
+
+  #autocad img{
+    margin: 0 auto;
+  }
+
+  #autocad #side{
+    margin-bottom: 20px;
+  }
 }
  
 @media screen and (max-width: 550px) {
@@ -451,13 +463,9 @@ img{
     margin-bottom: 30px;
   }
 
-  #autocad img{
-    margin: 0;
-  }
+  
 
-  .close{
-    padding-right: 15px;
-  }
+
 }
 
 @media screen and (max-width: 991px){
