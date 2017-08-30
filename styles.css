@@ -1,0 +1,274 @@
+body, html{
+	height: 100%;
+}
+
+.info{
+	background-color: #E8655D;
+	height: 100%;
+
+}
+
+h1{
+	font-family: 'Muli', sans-serif; 
+	display: block;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+}
+
+.profile{
+	margin-top: 30%;
+}
+
+.image .img-responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    width: 45%;
+    margin: auto;
+    border: 2px solid #DBC390;
+    border-radius: 50%;
+}
+
+.about{
+	color: white;
+	text-align: center;
+	margin: 0 35px;
+}
+
+.about h1{
+	margin-bottom: 18px;
+	margin-top: 24px;
+}
+
+.links{
+	text-align: center;
+}
+
+.links i{
+	color: #DBC390;
+	font-size: 20px;
+	margin: 16px 12px;
+}
+
+
+
+
+
+
+
+#portfoliohead h3{
+	color:#E54E45;
+	text-align:center;
+}
+
+#portfoliohead h4{
+	text-align:center;
+	font-weight:400;
+	font-family:Roboto,sans-serif;
+}
+
+#portfoliohead p{
+	font-size:16px;
+	text-align:center;
+}
+
+.wrapper{
+	display:block;
+	max-width:1100px;
+	margin:15px auto;
+}
+
+.portfolio{
+	max-width:1100px;
+	margin:0 auto;
+	display:block;
+}
+
+.portfolio li{
+	display:block;
+	float:left;
+	width:30%;
+	max-width:400px;
+	margin:10px 18px;
+}
+
+.portfolio li>a{
+	display:block;
+	padding:8px;
+	background:#fff;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow:1px 2px 2px rgba(0,0,0,.25);
+	-moz-box-shadow:1px 2px 2px rgba(0,0,0,.25);
+	box-shadow:1px 2px 2px rgba(0,0,0,.25);
+}
+
+.mfp-title{
+	font-size:1.2em;
+	color:#ddd!important;
+	font-weight:700;
+}
+
+img{
+	max-width:100%;
+}
+
+.wrapper .box{
+	overflow:hidden;
+	position:relative;
+}
+
+.wrapper .box .caption{
+	background-color:rgba(64,56,51,.8);
+	position:absolute;
+	color:#fff;
+	z-index:100;
+	-webkit-transition:all 300ms ease-out;
+	-moz-transition:all 300ms ease-out;
+	-o-transition:all 300ms ease-out;
+	-ms-transition:all 300ms ease-out;
+	transition:all 300ms ease-out;
+	left:0;
+	top:0;
+}
+
+.wrapper .box .fade-caption,.wrapper .box .scale-caption{
+	opacity:0;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding:15px;
+}
+
+.wrapper .box:hover .fade-caption{
+	opacity:1;
+}
+
+#artwork{
+	margin-top:75px;
+}
+
+#projects{
+	margin-top:40px;
+}
+
+.portfoliodialog{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#fff;
+	z-index:1000;
+	padding:50px 0 0;
+	margin:0;
+	overflow:auto;
+}
+
+.box-modal:hover{
+	cursor:pointer;
+}
+
+.close{
+	position:fixed;
+	top:0;
+	right:0;
+	padding:5px 32px 0 0;
+	font-size:35px;
+	color:#e54e45;
+	opacity:1;
+}
+
+.close:hover{
+	color:#DBC390;
+	opacity:1;
+}
+
+.dotBorder-modal{
+	padding:20px;
+}
+
+.portfoliodialog .row{
+	text-align:center;
+}
+
+.portfoliodialog img{
+	margin-bottom:30px;
+}
+
+#brainstorm{
+	margin-top:25px;
+}
+
+#brainstorm img{
+	height:375px;
+	display:inline-block;
+	padding:0 20px;
+}
+
+#autocad img{
+	margin:20px;
+	display:inline;
+}
+
+#groupimg{
+	margin:20px auto;
+}
+
+#volunteer p{
+	margin-top:30px;
+}
+
+@media screen and (max-width:1200px){
+	.portfolio li{
+		margin:10px;
+	}
+}
+
+@media screen and (max-width:780px){
+	.portfolio li{
+		width:45%;
+	}
+
+	.portfoliodialog .container{
+		padding-right:25px;
+		padding-left:25px;
+	}
+
+	.close{
+		padding-right:15px;
+	}
+
+	#autocad img{
+		margin:0 auto;
+		display:block;
+	}
+
+	#autocad #top{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+}
+
+@media screen and (max-width:550px){
+	.portfolio{
+		text-align:center;
+	}
+
+	.portfolio li{
+		float:none;
+		display:inline-block;
+		width:80%;
+		margin-bottom:30px;
+	}
+}
+
+@media screen and (max-width:991px){
+	.wrapper .box .caption{
+		left:-9999px;
+	}
+}

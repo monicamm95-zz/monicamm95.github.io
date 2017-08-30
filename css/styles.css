@@ -1,0 +1,53 @@
+body, html{
+	height: 100%;
+}
+
+.info{
+	background-color: #E8655D;
+	height: 100%;
+
+}
+
+h1{
+	font-family: 'Muli', sans-serif; 
+	display: block;
+}
+
+p{
+	font-family: 'Playfair Display', serif;
+}
+
+.profile{
+	margin-top: 30%;
+}
+
+.image .img-responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    width: 45%;
+    margin: auto;
+    border: 2px solid #DBC390;
+    border-radius: 50%;
+}
+
+.about{
+	color: white;
+	text-align: center;
+	margin: 0 35px;
+}
+
+.about h1{
+	margin-bottom: 18px;
+	margin-top: 24px;
+}
+
+.links{
+	text-align: center;
+}
+
+.links i{
+	color: #DBC390;
+	font-size: 20px;
+	margin: 16px 12px;
+}
