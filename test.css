@@ -22,7 +22,7 @@ h1{
 p{
 	font-family: 'Playfair Display', serif;
 	color: #FAFAF9;
-	font-size: 15.4px;
+	font-size: 16px;
 }
 
 .profile{
@@ -60,6 +60,9 @@ p{
 	margin: 16px;
 }
 
+.caption h3, .caption p{
+	text-align: center !important; 
+}
 
 #portfoliohead{
 	margin-left: 33.3%;
@@ -67,7 +70,7 @@ p{
 
 #portfoliohead h3{
 	color: #E54E45;
-	text-align:center;
+	text-align: left;
 	font-family: 'Muli', sans-serif; 
 }
 
@@ -76,14 +79,14 @@ p{
 }
 
 #portfoliohead h4{
-	text-align:center;
+	text-align:left;
 	font-weight:400;
 	font-family:Roboto,sans-serif;
 }
 
 #portfoliohead p{
-	/*font-size:16px;*/
-	text-align:center;
+	font-size:16px;
+	text-align:left;
 }
 
 .wrapper{
@@ -177,17 +180,21 @@ img{
 	height:100%;
 	background:#fff;
 	z-index:1000;
-	padding:50px 0;
+	padding:50px 25px;
 	margin:0;
 	overflow:auto;
 }
 
+@media (min-width: 1200px){
 .portfoliodialog .container{
-	padding: 0 80px;
+	width: 970px
 }
+}
+
 .portfoliodialog h1{
 	color: #13A3A5;
 	margin-bottom: 24px;
+	text-align: left
 }
 
 .portfoliodialog p{
@@ -236,12 +243,22 @@ img{
 	color: #E8655D;
 }
 
+.need-category{
+	margin-top: 24px;
+}
+
 .needs li{
-	font-family:'Playfair Display', serif;
-	width: 50%;
-	max-width: 400px;
-	text-align: justify;
-	margin: 5px 52px; 
+	width: 100%;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 7px 3px;
+    text-align: left;
+    float: none
+}
+
+.needs ul{
+	padding: 0;
 }
 
 .fa-bolt{
@@ -281,6 +298,7 @@ iframe{
 #finalversion p{
 	font-style: italic;
 	margin-bottom: 32px;
+	text-align: center
 }
 
 .trailerimg{
@@ -309,14 +327,16 @@ iframe{
 #busypoint li{
 	width: 100%;
 	font-family: "Playfair Display", serif;
-	font-size: 15.4px;
+	font-size: 16px;
 	max-width: 1000px;
-	margin: 3px;
+	margin: 7px 3px;
+	float: none;
 }
 
 #busypoint ul{
 	width: 100%;
 	padding: 0;
+	text-align: left
 }
 @media screen and (max-width:1200px){
 	.portfolio li{
@@ -337,6 +357,10 @@ iframe{
 	.close{
 		padding-right:15px;
 	}
+
+	.needs li{
+		width:100%;
+	}
 }
 
 @media screen and (max-width:550px){
@@ -352,8 +376,13 @@ iframe{
 		margin-bottom:30px;
 	}
 
+	.needs li{
+		width: 100%;
+		margin: 7px 3px;
+	}
+
 	.profile{
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 
 	#portfoliohead{
@@ -361,7 +390,7 @@ iframe{
 	}
 
 	.portfoliodialog{
-		padding: 12px;
+		padding: 25px;
 	}
 
 	.wrapper{
@@ -370,9 +399,6 @@ iframe{
 	iframe{
 		height: 200px;
 		margin-bottom: 50px;
-	}
-	p{
-		font-size: 14px;
 	}
 }
 
@@ -385,6 +411,9 @@ iframe{
 @media screen and (min-width: 768px){
 	.info{
 		position: fixed;
+	}
+	.profile{
+		margin-top: 20%;
 	}
 }
 
@@ -406,11 +435,11 @@ iframe{
 
 @media screen and (min-width: 551px) and (max-width: 767px){
 	.profile{
-		margin-top: 18%;
+		margin-top: 15%;
 	} 
 
 	.image .img-responsive{
-		width: 25%;
+		width: 33%;
 	}
 	#portfoliohead{
 		margin-left: 0;
