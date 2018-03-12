@@ -6,7 +6,23 @@ body, html{
 	background-color: #E8655D;
 	height: 100%;
 	margin-right: 30px;
-	
+}
+
+@media screen and (min-height: 500px){
+	.info{
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	vertical-align: middle;
+    	justify-content: center;
+	}
+}
+
+@media screen and (max-height: 499px){
+	.info{
+		overflow: auto;
+		padding-top: 10px;
+	}
 }
 
 .links i:hover{
@@ -25,9 +41,9 @@ p{
 	font-size: 16px;
 }
 
-.profile{
+/*.profile{
 	margin-top: 30%;
-}
+}*/
 
 .image .img-responsive{
 	display: block;
@@ -381,10 +397,10 @@ iframe{
 		margin: 7px 3px;
 	}
 
-	.profile{
+/*	.profile{
 		margin-top: 15%;
 	}
-
+*/
 	#portfoliohead{
 		margin-left: 0;
 	}
@@ -412,9 +428,6 @@ iframe{
 	.info{
 		position: fixed;
 	}
-	.profile{
-		margin-top: 20%;
-	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -425,6 +438,9 @@ iframe{
 	.portfolio li{
 		width: 90%;
 	}
+/*	.profile{
+		margin-top: 20%;
+	}*/
 }
 
 @media screen and (max-width: 767px){
@@ -434,9 +450,9 @@ iframe{
 }
 
 @media screen and (min-width: 551px) and (max-width: 767px){
-	.profile{
+/*	.profile{
 		margin-top: 15%;
-	} 
+	} */
 
 	.image .img-responsive{
 		width: 33%;
