@@ -1,0 +1,55 @@
+body{
+	background-color: #FBF5F5;
+	color: #062144;
+	width: 869px;
+	margin: auto;
+}
+
+h2{
+	font-family: Raleway;
+	font-size: 24px;
+}
+
+h1{
+	font-family: Playfair Display Black;
+	font-size: 60px;
+	font-style: italic;
+	margin: 25px 0 35px;
+}
+
+p{
+	font-family: Raleway;
+	font-size: 18px;
+}
+
+.intro{
+	margin-top: 70px;
+	display: flex;
+}
+
+.intro-text{
+	width: 465px;
+	margin-top: 75px;
+}
+
+.links{
+	margin-top: 15px;
+}
+
+.links a{
+	color: #062144;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+.links a:hover{
+	text-decoration: none;
+	color: #979797;
+}
+
+#monica-img{
+	display: inline-block;
+	float: right;
+	margin-left: 85px;
+	height: 600px;
+}
