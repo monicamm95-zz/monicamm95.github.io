@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monica Moore</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="shortcut icon" href="img/favicon.ico" >
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+</head>
+
+
+<body>
+    <div class="project">
+        <a href="index.html" class="backhome">Monica Moore</a>
+        <h2 class=company>Top Hat</h2>
+        <h1>Test Handback</h1>
+        <p>Top Hat has a Test product, where professors can administer secure tests within the platform. Missing from the product was the ability to hand back the tests for students to review, similar to paper tests. The goal was to build a feature for students to review how they did on each question in order to reach parity with this aspect of paper testing.</p>
+        <h3>Mapping to the Physical World</h3>
+        <p>The test experience is something very familiar to students. It is also something that can be very particular to them, as it's typically a stressful time for both students and profs. Thus, I knew I needed to at least match, and preferably exceed, the experience of handing back a paper test. It needed to:</p>
+        <ul>
+            <li>Be quick for the prof to hand back once all the grades are in</li>
+            <li>Show the student's total grade</li>
+            <li>Show students which questions they got wrong, and which they got right</li>
+            <li>Tell students what the correct answers were</li>
+            <li>Allow the students to use this information to study for future tests</li>
+        </ul>
+        <p>Many profs also said that they don't hand back tests to the class because they want to reuse their tests. Instead, if students want to review their tests, they have to come look it over during office hours. So, our solution needed to fit this use case as well.</p>
+        <h3>Version 1</h3>
+        <p>My initial thought was to apply our existing Review mode to Test. Profs can currently assign questions and pages to review mode, allowing students to quiz themselves as well as viewing the correct answer. They can toggle between their previously submitted answer and the correct answer. This would be a familiar pattern to our users, maintaining consistency across products. It would also be quite straightforward to build.</p>
+        <img src="img/thtv1student.png" class="embed">
+        <p>We tested this solution with a few profs, and they expressed frustration at not being able to view the correct answer at the same time as the submitted answer. They were also a bit confused by the word "Review", even though it's used throughout the app. They kept defaulting to the term "Hand Back". </p>
+        <h3>Version 2</h3>
+        <p>Based on the professors' feedback, I designed a second version that prioritized students being able to see their answers against the correct answers, with a secondary mode for practicing. I also took this as an opportunity to redesign the questions to be more in line with our recently redesigned iOS app.</p>
+        <img src="img/thtv2.png">
+        <h3>Testing with Students</h3>
+        <p>We brought 10 students into the office who had recently taken a test using Top Hat Test. I asked them to imagine that they were getting their test handed back to them via Top Hat. I then tested each version, alternating order, with the students, observing how they interacted with each. I then asked them their preference. 8/10 students preferred Version 2 since they found it clearer to review their tests. They really liked having Practice Mode, but preferred having it separate from their answers.</p>
+        <h3>Final Designs</h3>
+        <p>The prof half of the interface was simple, with a Hand Back button that only appears once the test ends with student responses. Profs can also hand back the test to individual students to accomodate for the office hours use case.</p>
+        <img src="img/profhandback.png" class="embed">
+        <p>To complete the student designs, I had to design a solution for all 7 question types. I also tested out several versions of how to display the correct answer vs the submitted answer. The submitted answers are always filled in with red or green to indicate correctness with a colored border. The correct answer merely has the checkmark. Both also explicity state "Your answer" and "Correct answer", but it needed to be clear from a glance.</p>
+        <img src="img/allqtypes.png" class="embed">
+        <p>When a student clicks on Practice Mode, the test opens in full screen, similar to the actual testing experience. They can go through and answer all the questions, either checking them individually or globally. This is just our current Review Mode applied to this use case.</p>
+        <img src="img/practicemode.png" class="embed">
+        <p>As you can see above, the question styling in Practice Mode is in an older style than seen in the main part of Handback. I redesigned all the question inputs with the plan to eventually update all the questions throughout the app. This had to be done alongside the hand back to ensure that it would all work cohesively. </p>
+        <img src="img/questioninputs.png">
+        <div class="next">
+            <p>
+            <a href="marketplace.html">Next Project: Top Hat Marketplace</a>
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
