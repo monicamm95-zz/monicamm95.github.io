@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monica Moore</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="shortcut icon" href="img/favicon.ico" >
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+</head>
+
+
+<body>
+    <div class="project">
+        <a href="index.html" class="backhome">Monica Moore</a>
+        <h2 class=company>School Project</h2>
+        <h1>UberPool Party</h1>
+        <p>Currently, there is no real way in the Uber app to pick up/drop off multiple friends at various locations. I designed a feature to address this problem. A fully detailed pdf of the project can be viewed <a href="uber.pdf" target="_blank">here</a>.</p>
+        <h3>Current State of the Art</h3>
+        <p>Currently, there are several carpooling apps, but none of them let users select who they ride with. Instead, UberPool, Lyft Line, and Waze pair riders based on convenient routing. Frustrations stem from the current carpooling systems including confusion about how the system works, conflict between passengers, and time spent picking up other riders.</p>
+        <p>Alternatively, some users do pick up friends on Uber, although in an unofficial manner. Many users get around the lack of a pick-up feature by setting the destination to their friend’s house, and then changing the destination once the friend is picked up. This requires explaining the situation to the driver and continuously updating the destination. There is also no way to split the fare based on individual distance travelled, so the riders must split the fare equally.</p>
+        <h3>User Interviews</h3>
+        <p>I interviewed six Uber users via phone, asking questions mainly about how they use Uber to get to events. These interviews presented some key findings. Most users, particularly women, do not like showing up to events alone. They usually meet at one location then Uber to the event together, which can be time consuming. Some users already use Uber to pick up at multiple locations by changing the destination when they reach a stop and explaining the situation to the driver. This can be a pain to explain, since the driver doesn’t always understand. Users also said it’s a hassle to keep changing the destination.</p>
+        <p>Regarding the feature, people thought that the price should be split based on the distance travelled, since some riders may live much closer to the destination than others. Some users also voiced concerns that the feature would only be helpful if all party members lived en route to the destination.</p>
+        <h3>Problem Statement</h3>
+        <p>Current carpool methods do not allow for streamlined pick-up of the user’s acquaintances. The goal is to design a system where friends can Uber together from separate locations and split costs fairly.</p>
+        <h3>Personas</h3>
+        <p>I created two personas, based on the stories of the users interviewed.</p>
+        <img src="img/KeiraPersona.png" class="img-responsive embed">
+        <img src="img/JonPersona.png" class="img-responsive">
+        <h3>Storyboard</h3>
+        <p>Next, I drew a storyboard, outlining the most common use case for this pick-up feature.</p>
+        <img src="img/UberStoryboard.png" class="img-responsive">
+        <h3>User Requirements</h3>
+        <p>I made a list of user requirements, which included being able to invite multiple contacts, invitees confirming pick-up before location is shared, being able to order the Uber even if a response is not received, and everyone being aware of the route and other passengers. More requirements can be seen <a href="uber.pdf" target="_blank">here</a>.</p>
+        <h3>Workflow</h3> 
+        <p>Due to convenience and safety reasons, I designed a system where the trip organizer invites their contacts, and the invitees must confirm their address before being added to the group.</p>
+        <img src="img/workflow.png" class="img-responsive">
+        <h3>Prototype</h3>
+        <p>After creating several iterations of <a href="uber.pdf" target="_blank">sketches</a>, I created a high-fidelity solution in Sketch.</p>
+        <h4>Initiating Pick Up Option</h4>
+        <p>The user first selects a final destination, as is usually done. Then, on the request page, if the user wants to pick up friends, they can tap on the Pick Up Friends button underneath Payment Methods.</p>
+        <img src="img/ChoosingGroup.png" class="img-responsive embed">
+        <h4>Inviting Friends</h4>
+        <p>After tapping on Pick Up Friends, a contact list appears. The user can select as many friends as will fit in the Uber. Friends that are frequently picked up will populate the Favourites list at the top. As friends are selected, a blue bar appears at the bottom, populated with the names of the invitees. This allows the user to easily confirm who they’ve selected, thereby preventing error. The user then taps on the paper airplane icon to send the invites.</p>
+        <img src="img/SelectFriends.png" class="img-responsive embed">
+        <h4>Accepting an Invite</h4>
+        <p>Once the request is sent, the invitees will receive a notification about the request saying  something like, “Derek Dobslaw has requested to pick you up on the way to the Calgary Tower”. Upon tapping the notification, the following screen opens. The user can then see the other users invited and their locations, and the final destination. They can also change their location if desired. The user then either confirms or declines the invite, which is relayed to the other group members.</p>
+        <img src="img/JoinGroup.png" class="img-responsive embed">
+        <h4>Group Status Page</h4>
+        <p>Confirmed users, as well as the organizer, can keep track of the status of the group on the group status page. Once a user confirms, their given location appears on the map. The organizer can request the Uber at any time since a situation may arise where an invitee does not respond. If all riders have confirmed, however, any rider will be able to request the Uber. </p>
+        <img src="img/GroupStatus.png" class="img-responsive embed">
+        <h4>Trip Route</h4>
+        <p>Once all the users have confirmed their addresses and the Uber has been requested, Uber calculates the optimal route. The optimal route is not calculated until the Uber is requested because it also takes into account Uber car proximity/availability. Once the Uber is on its way, each rider can see the Uber’s progress and estimated arrival time at their location. They can also see the order of the stops combined with who has been picked up</p>
+        <img src="img/TripInfo.png" class="img-responsive">
+        <div class="next">
+            <p>
+            <a href="playstationpersonas.html">Next Project: PlayStation Store Personas</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

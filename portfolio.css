@@ -3,6 +3,9 @@ body{
 	color: #062144;
 	width: 869px;
 	margin: auto;
+	margin-bottom: 75px;
+	padding: 0 25px;
+	max-width: 100%;
 }
 
 h2{
@@ -17,19 +20,37 @@ h1{
 	margin: 25px 0 35px;
 }
 
-p{
+h3{
+	font-family: playfair display;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.3px;
+}
+
+h4{
+	font-family: Raleway;
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+p, li{
 	font-family: Raleway;
 	font-size: 18px;
 }
 
+a{
+	color: #062144;
+}
+
+
 .intro{
-	margin-top: 70px;
+	margin-top: 60px;
 	display: flex;
 }
 
 .intro-text{
 	width: 465px;
-	margin-top: 75px;
+	margin-top: 60px;
 }
 
 .links{
@@ -44,12 +65,109 @@ p{
 
 .links a:hover{
 	text-decoration: none;
-	color: #979797;
+	color: #5C54AB;
 }
 
 #monica-img{
 	display: inline-block;
 	float: right;
 	margin-left: 85px;
-	height: 600px;
+	height: 550px;
+}
+
+.work{
+	margin-top: 80px;
+}
+
+.work img{
+	width: 100%;
+}
+
+
+.work-desc{
+	margin: 25px 0 50px;
+}
+
+.work a:hover{
+	text-decoration: none;
+	color: #5C54AB;
+	opacity: 0.9;
+}
+
+.project .backhome{
+	font-family: 'Playfair Display';
+	font-size: 20px;
+	font-style: italic;
+	color: #062144;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.project{
+	margin:80px 0;
+}
+
+.project h1{
+	font-style: normal;
+}
+
+.project h3{
+	margin: 50px 0 20px;
+}
+.project .company{
+	margin-top:120px;
+	font-weight: 400;
+}
+
+.project img{
+	width: 100%;
+	margin: 15px 0 10px;
+}
+
+.project a{
+	color: #062144;
+	text-decoration: underline;
+}
+
+.project a:hover{
+	color: #5C54AB;
+}
+
+#firstiteration{
+	margin:10px 0 25px;
+}
+
+.project .embed{
+	margin: 15px 0 35px;
+}
+
+.next p{
+	font-family: Playfair Display;
+	font-weight: 600;
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width:920px){
+	.profileimg{
+		display: none;
+	}
+
+	.intro-text{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.work{
+		margin-top: 50px;
+	}
+
+	.project{
+		margin-top: 40px;
+	}
+
+	.project .company{
+		margin-top: 60px;
+	}
 }
