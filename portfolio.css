@@ -14,10 +14,11 @@ h2{
 }
 
 h1{
-	font-family: Playfair Display Black;
+	font-family: Playfair Display;
 	font-size: 60px;
 	font-style: italic;
 	margin: 25px 0 35px;
+	font-weight: 900;
 }
 
 h3{
